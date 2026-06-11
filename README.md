@@ -1,7 +1,7 @@
 # HonestDiD.jl
 
-[![Build Status](https://github.com/eohne/HonestDiD.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/eohne/HonestDiD.jl/actions/workflows/CI.yml?query=branch%3Amaster)
-[![codecov](https://codecov.io/gh/eohne/HonestDiD.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/eohne/HonestDiD.jl)
+[![Build Status](https://github.com/eohne/HonestDiD.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/eohne/HonestDiD.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/eohne/HonestDiD.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/eohne/HonestDiD.jl)
 
 Julia port of the R package [HonestDiD](https://github.com/asheshrambachan/HonestDiD)
 (Rambachan and Roth, 2023). Robust inference and sensitivity analysis for
