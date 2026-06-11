@@ -10,4 +10,5 @@ include(joinpath(@__DIR__, "reference.jl"))
     include("validate_e2e.jl")          # LP/duals, FLCI, ARP grids, sensitivity, M bounds, Tables/show
     include("validate_variants.jl")     # all 9 computeConditionalCS variants (ARP, exact)
     include("validate_integration.jl")  # StatsAPI/honest_did + least-favorable (loose)
+    include("validate_coverage.jl")     # numPost==1 path, orchestrators, plot helpers
 end

@@ -19,9 +19,14 @@ function _conic_model()
     return m
 end
 
-# A usable primal solution exists (accept near-boundary points that stall at
-# SLOW_PROGRESS, mirroring how R reads whatever ECOS returns).
-_has_solution(m) = JuMP.primal_status(m) == MOI.FEASIBLE_POINT
+# Accept a solution the way R's CVXR does, i.e. status "optimal" or
+# "optimal_inaccurate". ECOS sometimes flags a near-degenerate boundary problem
+# (e.g. h close to h0) ALMOST_OPTIMAL with a primal point that is only nearly
+# feasible; that point is still usable, so take it as long as one exists.
+function _has_solution(m)
+    ts = termination_status(m)
+    return (ts == MOI.OPTIMAL || ts == MOI.ALMOST_OPTIMAL || ts == MOI.LOCALLY_SOLVED) && has_values(m)
+end
 
 # Status helpers mirroring R's interpretation of solver success.
 _is_optimal(m) = termination_status(m) == MOI.OPTIMAL
