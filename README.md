@@ -18,6 +18,10 @@ amount of violation.
 - Plots through a Plots.jl or Makie.jl extension
 - No DataFrames dependency; results are Tables.jl compatible and pretty print
 
+Any fitted event-study model that implements the StatsAPI interface with
+`τ::<event-time>` coefficient names works directly, in particular the dynamic
+estimators in [StagDiDModels.jl](https://github.com/eohne/StagDiDModels.jl)
+
 ## Installation
 
 ```julia

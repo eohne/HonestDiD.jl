@@ -1,6 +1,6 @@
 name = "HonestDiD"
 uuid = "6c865cec-ad23-4b8b-86d5-62b385b113bd"
-authors = ["Elias Ohneberg <elias.ohneberg@gmail.com> and contributors"]
+authors = ["Elias Ohneberg <elias.ohneberg@gmail.com>"]
 version = "0.1.0"
 
 [deps]
