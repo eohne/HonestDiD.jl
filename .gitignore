@@ -1,0 +1,12 @@
+/Manifest*.toml
+HonestDiD-master-R
+
+# coverage
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+lcov.info
+
+# docs
+/docs/build/
+/docs/Manifest.toml
